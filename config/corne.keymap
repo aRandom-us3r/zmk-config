@@ -5,6 +5,13 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+        
+    };
+    
     combos {
         compatible = "zmk,combos";
 
